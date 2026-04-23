@@ -20,7 +20,7 @@ int main(void)
 {
     float t=0,x=1,y=1,z=1,h=0.001,k1,k2,k3,k4,p1,p2,p3,p4,g1,g2,g3,g4;
     ofstream out("ode_8_b.dat");
-    for(t=-100;t<=50;t=t+h)
+    for(t=0;t<=150;t=t+h)
     {
         k1=h*f1(t,x,y,z);
         p1=h*f2(t,x,y,z);
