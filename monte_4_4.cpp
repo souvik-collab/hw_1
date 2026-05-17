@@ -6,14 +6,14 @@ using namespace std;
 
 double f(float x,float y)
 {
-    return exp(-x*y)*sin(x*x*y*y);
+    return exp(-x*y)*sin(pow(x,2)*pow(y,2));
 }
 
 int main(void)
 {
     float x0=0,y0=0,x1=2,y1=2;
     float x,y,sum=0;
-    int n=100000,count=0,i;
+    int n=1000000,count=0,i;
     srand(time(NULL));
     for(i=0;i<=n;i++)
     {
